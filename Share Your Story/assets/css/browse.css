@@ -1,19 +1,28 @@
+
+
 #collage_browser{
 	background-color: rgb(255,0,0);
+	width: 100%;
 	}
 .collage_browser_collage{
 	background-color: rgb(0,255,0);
-	width: 33%;
-	display: inline-block;	
+	width: 32%;
+	display: inline-block;
+	margin-left: 1%;
+	margin-top: 16px;
 	}
 .collage_owner{
 	background-color: rgb(0,0,255);
+	height = 64px;
 	}
 .user_profile_picture{
 	background-color: rgb(255,255,0);
+	padding: 16px;
 	}
 .username_link{
 	background-color: rgb(255,0,255);
+	line-height = 64px;
+	height = 64px;
 	}
 .collage_image_container{
 	background-color: rgb(0,255,255);
@@ -27,25 +36,34 @@
 	}
 .story_header{
 	background-color: rgb(0,0,192);
-	height: 86px;
+	height: 96px;
 	}
 .upvotes{
 	background-color: rgb(0,128,0);
 	float: left;
-	display: inline-block;	
+	display: inline-block;
+	height: 48px;
+	width: 25%;
+	text-align: center;
 	}
 .upvote_arrow{
 	background-color: rgb(0,0,128);
+	padding: 8px;
 	}
 .upvote_number{
 	background-color: rgb(128,128,0);
+	height: 48px;
+	line-height: 48px;
+	text-align: center;
+	font-size: 32px;
 	}
 .collage_top_story_title{
 	background-color: rgb(128,0,128);
-	height: 86px;
-	line-height: 86px;
+	height: 96px;
+	line-height: 96px;
 	text-align: center;
 	}
 .collage_top_story_summary{
 	background-color: rgb(0,128,128);
+	padding: 16px;
 	}
