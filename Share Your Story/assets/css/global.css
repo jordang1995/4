@@ -1,6 +1,6 @@
 /* Body Styles */
 body {
-	background-color: rgb(220, 220, 220);
+	background-color: rgb(230, 230, 230);
 }
 
 
@@ -19,39 +19,16 @@ nav {
 
 }
 
-nav li img {
-	height: 50%;
-}
-nav li {
+nav ul li {
 	list-style: none;
 	float: left;
-	height: 100%;
-	
+
 	padding: 5px;
 }
 
-nav ul:nth-of-type(1) {
-	float:left;
-	margin: 0px;
-	padding: 0px;
-}
-
-nav ul:nth-of-type(1) li {
-	border-right: 2px solid black;
-}
-
-nav ul:nth-of-type(2) li {
-	border-left: 2px solid black;
-}
-
-nav ul:nth-of-type(2) {
+nav ul a:nth-of-type(5), nav ul a:nth-of-type(6) {
 	float: right;
-	
-	margin: 0px;
-	padding: 0px;
 }
-
-
 
 
 /* clear fix */
