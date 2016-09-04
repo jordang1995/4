@@ -1,0 +1,51 @@
+#collage_browser{
+	background-color: rgb(255,0,0);
+	}
+.collage_browser_collage{
+	background-color: rgb(0,255,0);
+	width: 33%;
+	display: inline-block;	
+	}
+.collage_owner{
+	background-color: rgb(0,0,255);
+	}
+.user_profile_picture{
+	background-color: rgb(255,255,0);
+	}
+.username_link{
+	background-color: rgb(255,0,255);
+	}
+.collage_image_container{
+	background-color: rgb(0,255,255);
+	}
+.collage_image{
+	background-color: rgb(128,128,128);
+	max-width: 100%;
+	}
+.collage_top_story{
+	background-color: rgb(128,0,0);
+	}
+.story_header{
+	background-color: rgb(0,0,192);
+	height: 86px;
+	}
+.upvotes{
+	background-color: rgb(0,128,0);
+	float: left;
+	display: inline-block;	
+	}
+.upvote_arrow{
+	background-color: rgb(0,0,128);
+	}
+.upvote_number{
+	background-color: rgb(128,128,0);
+	}
+.collage_top_story_title{
+	background-color: rgb(128,0,128);
+	height: 86px;
+	line-height: 86px;
+	text-align: center;
+	}
+.collage_top_story_summary{
+	background-color: rgb(0,128,128);
+	}
