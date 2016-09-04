@@ -9,6 +9,7 @@ body > section:first-of-type {
 	background-color: white;
 	width: 90%;
 	margin: auto;
+	padding: 10px 0px 10px 0px;
 }
 
 /* Nav Styles */
