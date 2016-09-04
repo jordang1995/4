@@ -3,12 +3,8 @@ body {
 	background-color: rgb(220, 220, 220);
 }
 
-body * {
-	margin: 0px;
-	padding: 0px;
-}
 
-/* main styles */
+/* main section styles */
 body > section:first-of-type {
 	background-color: white;
 	width: 90%;
