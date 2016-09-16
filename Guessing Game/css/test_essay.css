@@ -1,0 +1,9 @@
+.collageImage {
+	float: left;
+	width: 20%;
+
+}
+
+.clearfix {
+	clear:both;
+}
