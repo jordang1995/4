@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 
 include 'dbh.php';
 
@@ -10,12 +11,11 @@ $query = "SELECT * FROM User WHERE username='$user' AND pwd='$pwd'";
 
 $result = mysqli_query($conn, $query);
 
-
-if (!mysqli_fetch_assoc($result)) {
+if (!$row = mysqli_fetch_assoc($result)) {
 	echo "Your username or password is incorrect.";
 } 
 else {
-	echo "You are logged in.";
+	$_SESSION['id'] = $row['id'];
 }
 
 header("Location: index.php");

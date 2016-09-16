@@ -1,3 +1,7 @@
+<?php
+	session_start();
+?>
+
 <!doctype HTML>
 <html>
 <head>
@@ -10,8 +14,28 @@
 	</header>
 	<nav id='primary'>
 		<a href="index.php"><li>Home Page</li></a>
-		<a href="essay_write.html"><li>Write Essay</li></a>
-		<a href="login.php"><li>Login</li></a>
+		<a href="essay_write.php"><li>Write</li></a>
+		<a href="#"><li>Browse</li></a>
+		<a href="#"><li>Tips</li></a>
+		<div id='loginNav'>
+			<a href="login.php">
+				<li>
+				<?php
+					if(isset($_SESSION['id'])) {
+						echo 'Profile';
+					} 
+					else {
+						echo 'Sign in';
+					}
+				?>
+				</li>
+			</a>
+			<?php 
+				if(isset($_SESSION['id'])) {
+					echo '<a href="logout.php"><li>Logout</li></a>';
+				}
+			?>
+		</div>
 	</nav>
 	<main>
 	</main>

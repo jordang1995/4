@@ -45,7 +45,7 @@ $('document').ready(function(){
 	// Function for filtering images returned from trove
 	function imageFilter(index, data) {
 		url = data.identifier[0].value;
-
+		console.log(url);
 		if (url.indexOf(urlPatterns[0]) >= 0) {	// Flickr image
 			imageCount++;
 			//images.push(getFlickrImage(url));
@@ -74,7 +74,7 @@ $('document').ready(function(){
 			images.push(url.slice(0, url.length-3) + jpg);
 		}
 		else {	// No reliable image found
-			//	console.log("Bad Image URL: " + url);
+			console.log("Bad Image URL: " + url);
 		}
 	}
 

@@ -1,5 +1,5 @@
 <?php
-
+	session_start();
 ?>
 
 <!DOCTYPE html>
@@ -16,10 +16,30 @@
 	</header>
 	<nav id='primary'>
 		<a href="index.php"><li>Home Page</li></a>
-		<a href="essay_write.php"><li>Write Essay</li></a>
-		<a href="login.php"><li>Login</li></a>
+		<a href="essay_write.php"><li>Write</li></a>
+		<a href="#"><li>Browse</li></a>
+		<a href="#"><li>Tips</li></a>
+		<div id='loginNav'>
+			<a href="login.php">
+				<li>
+				<?php
+					if(isset($_SESSION['id'])) {
+						echo 'Profile';
+					} 
+					else {
+						echo 'Sign in';
+					}
+				?>
+				</li>
+			</a>
+			<?php 
+				if(isset($_SESSION['id'])) {
+					echo '<a href="logout.php"><li>Logout</li></a>';
+				}
+			?>
+		</div>
 	</nav>
-	<main>
+	<main> 
 		<form action="verifySignup.php" method="POST">
 			<h3>Sign Up</h3>
 			<input type="text" name="user" placeholder="Username"><br>
@@ -33,6 +53,15 @@
 			<label>Password:</label><input type="password" name="pwd">
 			<button type="submit">Login</button>
 		</form>
+		<br><br>
+		<?php
+			if(isset($_SESSION['id'])) {
+				echo 'You are logged in with id:'.$_SESSION['id'];
+			}
+			else {
+				echo 'You are not logged in.';
+			}
+		?>
 	</main>
 </body>
 </html>
