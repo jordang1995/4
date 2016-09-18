@@ -11,3 +11,10 @@ body { padding-top: 50px; }
 	margin:auto;
 }
 
+.essaytitle {
+	font-size:36px;
+}
+
+footer {
+	background-color:rgb(255,159,31);
+}
